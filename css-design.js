@@ -3707,7 +3707,8 @@
                     while (e && (e === n.body || e === n.documentElement) && 'static' === S.css(e, 'position')) {
                         e = e.parentNode;
                     }
-                    e && e !== r && 1 === e.nodeType && ((i = S(e).offset()).top += S.css(e, 'borderTopWidth', true), 0 += S.css(e, 'borderLeftWidth', true));
+ e && e !== r && 1 === e.nodeType && ((i = S(e).offset()).top += S.css(e, 'borderTopWidth', true), i.left += S.css(e, 'borderLeftWidth', true));
+
                 }
                 return {
                     top: t.top - 0 - S.css(r, 'marginTop', true),
